@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "머신러닝 & 딥러닝 공부"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "DH Kim"
+description              : "취미로 딥러니 공부하기"
 url                      : "https://DDYYNN.github.io/"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -96,13 +96,13 @@ analytics:
 author:
   name             : "DH Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "취미로 딥러닝 공부하기"
+  bio              : "chobo ㅠㅠ"
   location         : "SCH"
-  email            :
+  email            :  fv7777@naver.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: fv7777@naver.com
+      # url:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -117,7 +117,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/dyyn0808"
+      # url: "https://instagram.com/dyyn0808"
 
 # Site Footer
 footer:
