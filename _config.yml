@@ -21,7 +21,7 @@ title                    : "머신러닝 & 딥러닝 공부"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "DH Kim"
-description              : "취미로 딥러니 공부하기"
+description              : "취미로 딥러닝 공부하기"
 url                      : "https://DDYYNN.github.io/"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
