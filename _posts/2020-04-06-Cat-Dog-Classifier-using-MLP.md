@@ -6,7 +6,6 @@ use_math: true
 comments: true
 ---
 
-# Image Classification using MLP
 PyTorch를 이용하여 개와 고양이 사진을 구분하는 MLP를 만든다.
 
 
