@@ -9,7 +9,7 @@ comments: true
 # Image Classification using MLP
 PyTorch를 이용하여 개와 고양이 사진을 구분하는 MLP를 만든다.
 
----
+
 ## 1. Import
 
 ```python
@@ -30,7 +30,7 @@ import time
 * `transforms` : 이미지 편집 후 텐서로 변환
 * `models` : pretrained model 불러오기
 
----
+
 ## 2. Training set
 
 ```python
@@ -70,7 +70,7 @@ testloader = torch.utils.data.DataLoader(test_data, batch_size=64)
 * Normalize는 tensor로의 변환 이후에 실행한다. (당연!)
 * `transforms.Normalize(mean, std, inplace=False)` : data는 3-channel color이므로 각 채널의 평균과 표준편차값으로 normalize
 
----
+
 ## 3. Load Pretrained Model
 
 ```python
@@ -122,7 +122,7 @@ ResNet(
 ```
 * `fc`에만 집중하면 된다. Classifier가 2048개의 입력을 받고 1000개의 출력을 낸다. 이걸 output 갯수가 2개인 binary classifier로 다시 만들어준다.
 * `fc` 이외 나머지 parameter들은 `param.requires_grad = False`를 이용하여 _**"반드시"**_ 고정시켜주자.
----
+
 ## 4. Create a New Classifier
 ```python
 # Make a new classifier to train
@@ -151,7 +151,7 @@ optimizer = optim.Adam(model.fc.parameters(), lr=0.003)
 	- 따라서 MLP의 output은 확률의 로그값인 $\text{LogSoftMax}$을 이용
 * `optim.Adam`에서 backprop할 대상은 `model.fc.parameters()`뿐!
 
----
+
 ## 5. Training
 
 ```python
@@ -263,7 +263,7 @@ Epoch 1/1.. Train loss: 0.177.. Test loss: 0.053.. Test accuracy: 0.980
 Time left : 14m 12s
 ...
 ```
----
+
 ## 6. Inference
 ```python
 ### INFERENCE SESSION
