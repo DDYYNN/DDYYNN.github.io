@@ -11,6 +11,7 @@ PyTorch를 이용하여 개와 고양이 사진을 구분하는 MLP를 만든다
 
 ---
 ## 1. Import
+
 ```python
 ### IMPORT
 import matplotlib.pyplot as plt
@@ -28,8 +29,10 @@ import time
 * `datasets` : `ImageFolder` 만들기
 * `transforms` : 이미지 편집 후 텐서로 변환
 * `models` : pretrained model 불러오기
+
 ---
 ## 2. Training set
+
 ```python
 ### MAKING TRAINING SET
 
@@ -69,6 +72,7 @@ testloader = torch.utils.data.DataLoader(test_data, batch_size=64)
 
 ---
 ## 3. Load Pretrained Model
+
 ```python
 # Use GPU if it's availiable
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
